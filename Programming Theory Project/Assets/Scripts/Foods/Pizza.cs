@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Pizza : Food
 {
+
+    /*
     public override string GetData()
     {
-        string pizzarita = "Italiano | " + NutritionAmount +" Calories";
-        return pizzarita;
-    }
+        string argentina = "Argentino Style | " + NutritionAmount +" Calories";
+        return argentina;
+    }*/
 
     protected override void FoodManager(){
         Debug.Log("Pizza has been eaten!");

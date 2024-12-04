@@ -11,23 +11,7 @@ public class Cat : Animal
     {
         Debug.Log($"{Name} or pisi pisi says Meow!");
     }
-/*
-    void Update()
-    {
-        InputHandle();
-        Move();
-
-        if(Input.GetKeyDown(KeyCode.Space)){
-            Jump(); 
-            Talk();
-            GetData();
-        }
-
-        if(Input.GetKeyDown(KeyCode.Escape)){
-            UIMainScene.Instance.HideInfoPopup();
-        }
-    }*/
-
+    
     public void Jump()
     {
         var uiInfo = GetComponentInParent<UIMainScene.IUIInfoContent>();
@@ -35,10 +19,6 @@ public class Cat : Animal
         Debug.Log($"{Message} jumps gracefully.");
     }
 
-    public override string GetData()
-    {
-        string cato =$"Speed:{Speed}\n \n {Message}";
-        return cato;
-    }
+
     
 }

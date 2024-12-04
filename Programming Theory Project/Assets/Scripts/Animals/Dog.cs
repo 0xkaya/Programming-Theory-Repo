@@ -14,10 +14,4 @@ public class Dog : Animal
     {
         Debug.Log($"{Name} jumps excitedly.");
     }
-
-    public override string GetData()
-    {
-        string cato =$"Speed:{Speed}\n \n {Message}";
-        return cato;
-    }
 }

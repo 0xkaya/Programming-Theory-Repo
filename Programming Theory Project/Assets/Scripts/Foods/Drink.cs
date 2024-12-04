@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Drink : Food
 {
+    /*
     public override string GetData()
     {
-        string drinkName = ($"Nutrition Amount | \n {NutritionAmount} :/");
-        return drinkName;
-    }
+        return $"Nutrition: {NutritionAmount}, \n \n Boost: {boostAmount}x for {boostDuration}s";
+    }*/
     protected override void FoodManager()
     {
         Debug.Log("Pizza has been eaten!");

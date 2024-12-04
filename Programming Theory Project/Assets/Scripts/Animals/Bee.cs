@@ -15,9 +15,4 @@ public class Bee : Animal
         Debug.Log($"{Name} is flying high in the air.");
     }
 
-    public override string GetData()
-    {
-        string Bee =$"Speed:{Speed}\n \n {Message}";
-        return Bee;
-    }
 }

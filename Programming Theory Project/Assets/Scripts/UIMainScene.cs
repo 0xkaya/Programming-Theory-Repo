@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIMainScene : MonoBehaviour
 {
@@ -33,11 +34,14 @@ public class UIMainScene : MonoBehaviour
 
         m_CurrentContent = content;
         InfoPopup.SetContent(content.GetName(), content.GetData()); // Update the popup
-        InfoPopup.Show(); // Show the popup
     }
 
-    public void HideInfoPopup()
+    public void ShowInfoPopup()
     {
-        InfoPopup.Hide(); // Hide the popup
+        InfoPopup.Show(); // Hide the popup
+    }
+
+    public void MenuScene(){
+        SceneManager.LoadScene(0);
     }
 }
